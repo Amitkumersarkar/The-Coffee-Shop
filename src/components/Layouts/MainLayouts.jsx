@@ -1,4 +1,5 @@
 // import { Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import Navbar from "../Header/Navbar";
 
@@ -6,17 +7,14 @@ const MainLayouts = () => {
 
     return (
         <div>
-            {/* Navbar */}
+            {/* Navbar Section*/}
             <Navbar></Navbar>
-            {/* Dynamic section */}
-            <div className="min-h-[]">
-
+            <div className="min-h-[calc(100vh-232px)]">
+                {/* Dynamic content here */}
+                <Outlet></Outlet>
             </div>
-            {/* <Outlet></Outlet> */}
-            {/* Footer */}
+            {/* Footer Section*/}
             <Footer></Footer>
-
-
         </div>
     );
 };
