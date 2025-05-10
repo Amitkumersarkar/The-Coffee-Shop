@@ -1,9 +1,9 @@
-import React from 'react';
 
 const Coffees = () => {
+
     return (
         <div>
-            
+            <h2>coffees</h2>
         </div>
     );
 };
