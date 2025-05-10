@@ -6,7 +6,7 @@ import Navbar from "../Header/Navbar";
 const MainLayouts = () => {
 
     return (
-        <div>
+        <div className="w-11/12 mx-auto">
             {/* Navbar Section*/}
             <Navbar></Navbar>
             <div className="min-h-[calc(100vh-232px)] py-12 container mx-auto px-8">

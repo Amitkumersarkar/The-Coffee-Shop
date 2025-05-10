@@ -17,9 +17,9 @@ const Navbar = () => {
                         <Link to='/dashboard'>Dashboard</Link>
                     </ul>
                 </div>
-                <Link to='/' className=" text-xl">Coffee House</Link>
+                <Link to='/' className=" text-xl font-bold">Coffee House</Link>
             </div>
-            <div className="navbar-end hidden lg:flex">
+            <div className="navbar-end hidden lg:flex text-xl font-semibold">
                 <ul className="menu menu-horizontal px-1 gap-10">
                     <Link to='/'>Home</Link>
                     <Link to='/coffees'>Coffees</Link>
