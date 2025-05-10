@@ -1,9 +1,10 @@
+import Hero from "../Banner/Hero";
 
 const Home = () => {
 
     return (
         <div>
-            <h3>home page</h3>
+            <Hero></Hero>
         </div>
     );
 };
