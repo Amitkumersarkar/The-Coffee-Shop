@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Categories = ({ categories }) => {
 
@@ -6,10 +6,10 @@ const Categories = ({ categories }) => {
         <div role="tablist" className="tabs tabs-lift justify-center font-extrabold gap-60">
             {
                 categories.map(category =>
-                    <Link key={category.category}
-                        to={`/category/${category.category}`} className="tab">
+                    <NavLink key={category.category}
+                        to={`/category/${category.category}`} className={({ isActive }) => `tab ${isActive ? 'tab-Active' : ''}`}>
                         {category.category}
-                    </Link>)
+                    </NavLink>)
             }
         </div>
     );
